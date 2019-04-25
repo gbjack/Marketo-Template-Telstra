@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Akkurat";
+    src: url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Akkurat-Light.eot");
+    src: url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Akkurat-Light.eot?#iefix") format("embedded-opentype"),
+    url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Akkurat-Light.woff2") format("woff2"),
+    url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Akkurat-Light.woff") format("woff"),
+    url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Akkurat-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gravur-Condensed";
+    src: url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Gravur-Condensed.eot");
+    src: url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Gravur-Condensed.eot?#iefix") format("embedded-opentype"),
+    url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Gravur-Condensed.woff2") format("woff2"),
+    url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Gravur-Condensed.woff") format("woff"),
+    url("https://connect.telstraglobal.com/rs/418-XEE-301/images/Gravur-Condensed.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a:visited, a:hover, a:active {
+    font-family: 'Gravur-Condensed', Arial, Helvetica, sans-serif;
+    color: #1964c8;
+    text-decoration: none;
+}
+
+a :hover {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Akkurat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.img-fluid-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.spectrum {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 562px;
+    min-height: 562px;
+    margin-top: 0;
+    background: url(../img/3.0-spectrum-gradient-blue.png); background-repeat:no-repeat; background-position:top center;
+}
+
+p {
+    font-family: 'Gravur-Condensed', Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    color: #2d2d2d;
+}
+.site-heading {
+    color: #333333;
+    font-size: 2.57142857em;
+    margin-top: 10px;
+    line-height: 1em;
+    font-family: "Akkurat", Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+}
+
+#line {
+    border-top: 0.5px solid #dadada;
+    padding-top: 15px;
+}
+
+.formContainer {
+    border: solid 1px #dadada;
+    margin-top: 60px;
+}
+
+
+@media (min-width: 576px) {
+    .img-fluid-logo {
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+
+/* =======================
+Marketo form customisation
+======================= */ 
+.mktoButtonWrap {
+  margin-left:20px !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    background: #0099d2 !important;
+} 
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    border: 0 !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    padding:10px 30px !important;
+    margin-top: 20px !important;
+}
+
+fieldset{
+    border: 1px solid #dadada;
+    padding:1em !important;
+    font-family: "Akkurat", Arial, Helvetica, sans-serif;
+}
+
+legend{
+    display:none;
+}
+
+
+/* =======================
+Marketo Boolean
+======================= */ 
+.header {
+    display: ${showHeader};
+}
+
+.section-1 {
+    display:${showHeadline};
+}
+
+.section-2 {
+    display:${showForm};
+}
+
+.footer {
+    display:${showFooter};
+}
